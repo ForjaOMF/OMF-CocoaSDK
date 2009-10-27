@@ -1,0 +1,38 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../Style.css">
+	<title>Open movilforum Cocoa SDK</title>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://open.movilforum.com"></a></h1>
+	</div>
+
+	<div id="sidebar">
+		<iframe src ="../Sidebar.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+	</div>
+	
+	<div id="content">
+		<h3>SMSReceiver: setDelegate</h3>
+
+		Set the SMSRecevier delegate <br><br>
+
+		<font face="Courier New">(void) setDelegate: (id) theDelegate;</font><br><br>
+
+		<b>Parameters</b><br>
+		<i>theDelegate</i><br>
+		&nbsp;&nbsp;Specifies the delegate to use the receptionFinished function that will process the SMS messages<br><br>
+		<b>Return</b><br>
+		None<br><br>
+
+		<b>Remarks</b><br>
+		<i>receptionFinished</i> function need not be named must be declared as follows:<br><br>
+		<font face="Courier New">- (void) receptionFinished(NSMutableArray*) & messages_list);</font><br><br>
+		where <i>messages_list</i> contains the list of received SMS messages.
+
+	</div>
+</div>
+</body>
+</html>
